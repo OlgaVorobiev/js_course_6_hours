@@ -74,7 +74,10 @@ if (courseStatus === 'ready') {
 
 const num1 = 42
 const num2 = '42'
-console.log(num1 == num2)
-console.log(num1 === num2)
+console.log(num1 == num2) //true // == оператор приводит к типу число
+console.log(num1 === num2) //false // не приводит
 
-alert('Hi!')
+const isReady = true
+if (isReady) {
+    console.log('All is ready!')
+}
