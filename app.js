@@ -78,6 +78,32 @@ console.log(num1 == num2) //true // == оператор приводит к ти
 console.log(num1 === num2) //false // не приводит
 
 const isReady = true
-if (isReady) {
-    console.log('All is ready!')
+// if (isReady) {
+//     console.log('All is ready!')
+// }
+
+isReady ? console.log('All is ready!') : console.log('Nothing is ready!') //ternary operator
+
+//7. Булевая логика
+
+//8. Функции
+
+function calculateAge(year) {
+    return 2022 - year
 }
+
+//console.log(calculateAge(1988))
+
+function logInfoAbout(name, year) {
+    const age = calculateAge(year)
+    if (age > 0) {
+    console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+    } else {
+        console.log('Введенный год больше текущего!')
+    }
+}
+
+logInfoAbout('Tom', 1990)
+logInfoAbout('Eva', 2030)
+
+
