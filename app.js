@@ -106,4 +106,44 @@ function logInfoAbout(name, year) {
 logInfoAbout('Tom', 1990)
 logInfoAbout('Eva', 2030)
 
+//9. Array
+//const cars = new Array('mazda', 'mercedes', 'ford') - под капотом
+const cars = ['mazda', 'mercedes', 'ford'] //js сам преобразует в выражение выше
 
+console.log(cars.length)
+console.log(cars[0])
+console.log(cars[3])
+
+cars[0] = 'Porsche'
+cars[cars.length] = 'mazda' 
+console.log(cars)
+
+//10. Циклы
+const bestCars = ['mazda', 'mercedes', 'ford']
+
+for (let i = 0; i < bestCars.length; i++) {
+    const car = bestCars[i] //??? let
+    console.log(car)
+}
+//в последней версии JS появился цикл forof
+for (let car of bestCars) {
+    console.log(car)
+}
+
+// 11.Объекты (что-то вроде группировки значений, но в отличии от массива создаем различные структуры)
+
+//const person = new Object({})   //под капотом
+const person = {        //перечисляем свойства как ключ-значение
+    firstName: 'Tom',  
+    lastName: 'Petrov',
+    year: 1990,
+    languages: ['Ru', 'En', 'De'],
+    hasWife: false,
+    greet: function() {
+        console.log('greet for person')
+    } //Это метод (функция, определеная в контексте объекта)
+}
+//способы обращения к свойствам и методам
+console.log(person.firstName) //1.
+
+person.greet()
