@@ -53,6 +53,7 @@ console.log(typeof name) //string
 console.log(typeof age) //number
 console.log(typeof x) //undefined
 console.log(typeof y) //тут какой-то баг, выводит как object, хотя должен null
+console.log(typeof undefined) //undefined
 
 //5. Приоритет операторов
 const fullAge = 34
