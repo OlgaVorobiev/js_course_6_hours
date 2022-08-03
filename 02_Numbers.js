@@ -51,12 +51,13 @@ console.log(parseInt(10n) + 4) //14   //тип number
 console.log(10n + BigInt(4))   //14n  //тип BigInt   
 console.log(5n / 2n)           //2n   //тип BigInt
 
-//3. Math
+//3. Math   описать % - остаток от деления 10%3=1  24%5=4
 console.log(Math.E)
 console.log(Math.PI)
-console.log(Math.sqrt(25))  //5   //корень
-console.log(Math.pow(5, 3)) //125
+console.log(Math.sqrt(25))  //5   //корень  //the square root of a number
+console.log(Math.pow(5, 3)) //125 // 5 ** 3  тоже самое
 console.log(Math.abs(-42))  //42  //модуль
+console.log(Math.sign(-42)) //-1  //полож или отрицат (при 0 верн 0, при 50 верн 1)
 console.log(Math.max(42, 12, 422, 30))  //422
 console.log(Math.min(42, 12, 422, 30))  //12
 console.log(Math.floor(4.9))  //4   //окр в нисшую

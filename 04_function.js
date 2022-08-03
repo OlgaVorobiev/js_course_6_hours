@@ -35,16 +35,21 @@ console.dir(greet)
 
 //4. Стрелочные функции
 
-const func1 = function func1(a, b) {
-    console.log('Hi!', a, ' & ', b)
+const func1 = function func1(a, b) {  //Hi! Lina & Tom!
+    return `Hi! ${a} & ${b}!`
 }
 
-const func2 = a => console.log('Hi!', a)
-const func3 = (a, b) => console.log('Hi!', a, ' & ', b)
+const func2 = a => {                   //Hi! Lina & Tom!
+    a = `${a} & Tom`
+    return `Hi! ${a}!`
+}
+const func3 = a => `Hi! ${a}!`              //Hi! Lina!             //это лямбда-функция
+const func4 = (a, b) => `Hi! ${a} & ${b}!`  //Hi! Lina & Tom!       //это лямбда-функция
 
-func1('Lina', 'Tom')
-func2('Lina')
-func3('Lina', 'Tom')
+console.log(func1('Lina', 'Tom'))
+console.log(func2('Lina'))
+console.log(func3('Lina'))
+console.log(func4('Lina', 'Tom'))
 
 const pow = num => num ** 2
 console.log(pow(5))

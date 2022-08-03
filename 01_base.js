@@ -83,6 +83,7 @@ const isReady = true
 //     console.log('All is ready!')
 // }
 
+//ternary operator
 isReady ? console.log('All is ready!') : console.log('Nothing is ready!') //ternary operator
 
 //7. Булевая логика
@@ -116,7 +117,8 @@ console.log(cars[0])
 console.log(cars[3])
 
 cars[0] = 'Porsche'
-cars[cars.length] = 'mazda' 
+cars[cars.length] = 'mazda'  //добавление в конец, но никто так не делает. Лучше:
+cars.push('Reno') //добавление в конец
 console.log(cars)
 
 //10. Циклы

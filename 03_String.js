@@ -15,19 +15,18 @@ console.log(output3)
 
 const myStr = 'My new simple string.'
 console.log(myStr.length)
-console.log(myStr.toUpperCase())
-console.log(myStr.toLocaleLowerCase())
-console.log(myStr.charAt(3))
-console.log(myStr.indexOf('new'))
-console.log(myStr.indexOf('555'))
-console.log(myStr.toLocaleLowerCase().startsWith('my'))
-console.log(myStr.endsWith('r'))
-console.log(myStr.repeat(3))
-console.log(myStr.repeat(3))
+console.log(myStr.toUpperCase())        //MY NEW SIMPLE STRING.
+console.log(myStr.toLocaleLowerCase())  //my new simple string.
+console.log(myStr.charAt(3))            //n
+console.log(myStr.indexOf('new'))       //3     //поиск
+console.log(myStr.indexOf('555'))       //-1
+console.log(myStr.toLocaleLowerCase().startsWith('my')) //true   //начинается с
+console.log(myStr.endsWith('r'))        //false   //заканчивается
+console.log(myStr.repeat(3))            
 const str = '     password    '
-console.log(str.trim())
-console.log(str.trimStart())
-console.log(str.trimEnd())
+console.log(str.trim())                 //обрезает пробелы
+console.log(str.trimStart())            //обрезает пробелы вначале
+console.log(str.trimEnd())              //обрезает пробелы вконце
 
 function logPerson(s, name, age) {
     //это нужно для возможности осуществления валидации переменных. Напр:
