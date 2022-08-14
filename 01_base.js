@@ -88,6 +88,17 @@ isReady ? console.log('All is ready!') : console.log('Nothing is ready!') //tern
 
 //7. Булевая логика
 
+//7. Инкремент, декримент
+// let a = 1
+// let b = ++a
+// console.log(b) //2
+// console.log(a) //2
+
+let a = 1
+let b = a++
+console.log(b) //1
+console.log(a) //2  
+
 //8. Функции
 
 function calculateAge(year) {
@@ -128,10 +139,15 @@ for (let i = 0; i < bestCars.length; i++) {
     const car = bestCars[i] //??? let
     console.log(car)
 }
+//массивы: 2 метода
 //в последней версии JS появился цикл forof
 for (let car of bestCars) {
     console.log(car)
 }
+let sum = 0
+   arr.forEach(num => {
+   sum += parseInt(num)
+})
 
 // 11.Объекты (что-то вроде группировки значений, но в отличии от массива создаем различные структуры)
 

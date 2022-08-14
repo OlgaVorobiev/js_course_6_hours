@@ -17,7 +17,7 @@ const myStr = 'My new simple string.'
 console.log(myStr.length)
 console.log(myStr.toUpperCase())        //MY NEW SIMPLE STRING.
 console.log(myStr.toLocaleLowerCase())  //my new simple string.
-console.log(myStr.charAt(3))            //n
+console.log(myStr.charAt(3))            //n   myStr[3]  - тоже самое
 console.log(myStr.indexOf('new'))       //3     //поиск
 console.log(myStr.indexOf('555'))       //-1
 console.log(myStr.toLocaleLowerCase().startsWith('my')) //true   //начинается с
